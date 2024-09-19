@@ -202,6 +202,7 @@ if(boutonTop){
        
 // gestion du link active lors de la navigation
 let navbarlinks = document.querySelector('#navbar .scrollto', true)
+
 const navbarlinksActive = () => {
   let position = window.scrollY + 200
   navbarlinks.forEach(navbarlink => {
@@ -210,6 +211,7 @@ const navbarlinksActive = () => {
     if (!section) return
     if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
       navbarlink.classList.add('active')
+    
     } else {
       navbarlink.classList.remove('active')
     }
@@ -217,3 +219,7 @@ const navbarlinksActive = () => {
 }
 window.addEventListener('load', navbarlinksActive)
 onscroll(document, navbarlinksActive)
+
+
+
+

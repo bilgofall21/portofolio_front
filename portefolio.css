@@ -77,6 +77,7 @@ text-decoration: none;
 }
 .nav-link.active{
     color: var(--blue-protefolio);
+    font-weight: bold;
 }
 .nav-link:hover{
     color: var(--blue-protefolio);
